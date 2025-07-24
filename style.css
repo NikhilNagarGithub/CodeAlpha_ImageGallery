@@ -1,0 +1,79 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body{
+
+  background-color: rgb(190, 217, 196);
+}
+
+
+section{
+     padding: 20px;
+     width: 100%;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     flex-direction: column;
+     margin-top: 40px;
+}
+
+section ul{
+     
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+section ul li{
+    list-style: none;
+    background:  rgb(128, 156, 133);
+    color: #fff;
+    padding: 12px;
+    margin: 5px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+section ul li.active{
+  background: #fff;
+  color: black;
+}
+
+.product {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.product .itemBox{
+  position: relative;
+  width: 250px;
+  height: 250px;
+  margin: 5px;
+  display: block;
+}
+
+.product .itemBox.hide{
+  display: none;
+}
+
+.product .itemBox img{
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 20px;
+
+}
